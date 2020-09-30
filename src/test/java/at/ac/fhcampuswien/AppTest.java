@@ -67,7 +67,7 @@ class AppTest {
     @Test
     public void largestNumber2()
     {
-        ps.println("-1,1111");
+        ps.println("-1");
 
         String output = "Number 1: " +
                 "No number entered." + System.lineSeparator();
