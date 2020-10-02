@@ -61,7 +61,7 @@ class AppTest {
         exercise1.largestNumber();
 
         // assertion
-        assertEquals(output, bos.toString());
+        assertEquals(output, bos.toString().replace(",","."));
     }
 
     @Test
@@ -144,7 +144,6 @@ class AppTest {
                 "  h" + System.lineSeparator() +
                 " ghg" + System.lineSeparator() +
                 "fghgf" + System.lineSeparator() +
-                "fghgf" + System.lineSeparator() +
                 " ghg" + System.lineSeparator() +
                 "  h" + System.lineSeparator();
 
@@ -193,7 +192,7 @@ class AppTest {
         exercise1.marks();
 
         // assertion
-        assertEquals(output, bos.toString());
+        assertEquals(output, bos.toString().replace(",","."));
     }
 
     @Test
@@ -220,7 +219,7 @@ class AppTest {
         exercise1.marks();
 
         // assertion
-        assertEquals(output, bos.toString());
+        assertEquals(output, bos.toString().replace(",","."));
     }
 
     @Test
