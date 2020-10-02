@@ -81,6 +81,58 @@ class AppTest {
     }
 
     @Test
+    public void largestNumber3()
+    {
+        ps.println("some string");
+
+        String output = "Number 1: " +
+                "No number entered." + System.lineSeparator();
+
+        // action
+        App exercise1 = new App();
+        exercise1.largestNumber();
+
+        // assertion
+        assertEquals(output, bos.toString());
+    }
+
+    @Test
+    public void largestNumber4()
+    {
+        ps.println(2);
+        ps.println("some string");
+
+        String output = "Number 1: " +
+                "Number 2: " +
+                "The largest number is 2.00" + System.lineSeparator();
+
+        // action
+        App exercise1 = new App();
+        exercise1.largestNumber();
+
+        // assertion
+        assertEquals(output, bos.toString());
+    }
+
+    @Test
+    public void largestNumber5()
+    {
+        ps.println(3.3);
+        ps.println(-3);
+
+        String output = "Number 1: " +
+                "Number 2: " +
+                "The largest number is 3.30" + System.lineSeparator();
+
+        // action
+        App exercise1 = new App();
+        exercise1.largestNumber();
+
+        // assertion
+        assertEquals(output, bos.toString());
+    }
+
+    @Test
     public void stairs1()
     {
         ps.println("5");
