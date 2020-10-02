@@ -196,7 +196,6 @@ class AppTest {
                 "  h" + System.lineSeparator() +
                 " ghg" + System.lineSeparator() +
                 "fghgf" + System.lineSeparator() +
-                "fghgf" + System.lineSeparator() +
                 " ghg" + System.lineSeparator() +
                 "  h" + System.lineSeparator();
 
@@ -266,6 +265,23 @@ class AppTest {
                 "Mark 5: " +
                 "Average: 3.50" + System.lineSeparator() +
                 "Negative marks: 2" + System.lineSeparator();
+
+        // action
+        App exercise1 = new App();
+        exercise1.marks();
+
+        // assertion
+        assertEquals(output, bos.toString());
+    }
+
+    @Test
+    public void marks3()
+    {
+        ps.println(0);
+
+        String output = "Mark 1: " +
+                "Average: 0.00" + System.lineSeparator() +
+                "Negative marks: 0" + System.lineSeparator();
 
         // action
         App exercise1 = new App();
