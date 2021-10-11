@@ -18,6 +18,7 @@ test {
     useJUnitPlatform()
 }
 
+//noinspection GroovyAssignabilityCheck
 run {
     standardInput(System.in)
 }
